@@ -33,9 +33,20 @@ namespace ejemplo2_guia2
             Console.Write("\n");
 
             // Procesos
-            c4 = c2 * 0.92;
+            c4 = c2 * 0.92; // Pasamos dolares a euros
             total = c1 + c4 + c3;
+            p1 = (c1 * 100) / total; // Regla de 3
+            p2 = (c4 * 100) / total;// Regla de 3 
+            p3 = (c3 * 100) / total; // Regla de 3
+            Console.WriteLine("\t**************************************************");
+            Console.WriteLine("\tEl total de dinero es de........: $" + Math.Round(total, 2));
+            Console.Write("\n");
+            Console.WriteLine("\tEl porcentaje de Mbapee es de...: " + Math.Round(p1, 2) + "%");
+            Console.WriteLine("\tEl porcentaje de Neymar es de...: " + Math.Round(p2, 2) + "%");
+            Console.WriteLine("\tEl porcentaje de Melviño es de..: " + Math.Round(p3, 2) + "%");
+            Console.WriteLine("\t**************************************************");
+            Console.Write("\n");
+
         }
     }
 }
-
